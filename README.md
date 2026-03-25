@@ -106,7 +106,7 @@ https://linear-regression-model-hr-dataset.streamlit.app/
 📍 Bengaluru, India  
 
 - 💼 Data Analytics Intern @ Rooman Technologies
-- Software Development Intern @ TAP Academy
+- 💼 Software Development Intern @ TAP Academy
 - 💻 Interested in Machine Learning & Software Development  
 
 📧 vanithalakshmin354@gmail.com  
