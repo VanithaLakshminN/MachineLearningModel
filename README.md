@@ -93,7 +93,10 @@ Models to be implemented:
 ## 🚀 Future Scope  
 - Deploy model using Streamlit  
 - Build interactive dashboard  
-- Improve accuracy using advanced models (XGBoost, LightGBM)  
+- Improve accuracy using advanced models (XGBoost, LightGBM)
+
+## Project live link
+~https://linear-regression-model-hr-dataset.streamlit.app/~
 
 ---
 
