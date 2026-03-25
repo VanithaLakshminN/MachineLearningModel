@@ -105,7 +105,8 @@ https://linear-regression-model-hr-dataset.streamlit.app/
 🎓 B.E. CSE (2022–2026)  
 📍 Bengaluru, India  
 
-- 💼 Data Analytics Intern @ Rooman Technologies  
+- 💼 Data Analytics Intern @ Rooman Technologies
+- Software Development Intern @ TAP Academy
 - 💻 Interested in Machine Learning & Software Development  
 
 📧 vanithalakshmin354@gmail.com  
