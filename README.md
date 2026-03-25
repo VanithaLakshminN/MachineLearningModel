@@ -96,7 +96,7 @@ Models to be implemented:
 - Improve accuracy using advanced models (XGBoost, LightGBM)
 
 ## Project live link
-~https://linear-regression-model-hr-dataset.streamlit.app/~
+https://linear-regression-model-hr-dataset.streamlit.app/
 
 ---
 
