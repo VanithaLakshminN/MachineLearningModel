@@ -12,13 +12,13 @@ st.markdown("""
 Predict whether an employee is likely to leave the company based on demographic and job-related factors.
 """)
 
-# --- 2. DATA PREPROCESSING (Matching your Notebook) ---
-# In a real app, you would load your saved .pkl model. 
+# --- 2. DATA PREPROCESSING ---
+# In a real app, we would load your saved .pkl model. 
 # Here, we simulate the logic found in your 'hr_attrition_prediction.ipynb'.
 def preprocess_and_train_mock():
-    # This represents the columns identified in your notebook
+    # This represents the columns identified in notebook
     cat_cols = ['BusinessTravel', 'Department', 'EducationField', 'Gender', 'JobRole', 'MaritalStatus', 'OverTime']
-    # Note: Your notebook dropped 'EmployeeCount', 'EmployeeNumber', 'Over18', 'StandardHours'
+    # Note: notebook dropped 'EmployeeCount', 'EmployeeNumber', 'Over18', 'StandardHours'
     return cat_cols
 
 # --- 3. SIDEBAR - USER INPUTS ---
@@ -27,10 +27,10 @@ st.sidebar.header("Employee Attributes")
 def user_input_features():
     # Numerical Inputs based on your num_cols list
     age = st.sidebar.slider("Age", 18, 60, 30)
-    monthly_income = st.sidebar.number_input("Monthly Income ($)", 1000, 20000, 5000)
+    monthly_income = st.sidebar.number_input("Monthly Income ($)",100, 500, 1000, 20000, 5000)
     total_working_years = st.sidebar.slider("Total Working Years", 0, 40, 10)
-    job_satisfaction = st.sidebar.select_slider("Job Satisfaction", options=[1, 2, 3, 4])
-    work_life_balance = st.sidebar.select_slider("Work-Life Balance", options=[1, 2, 3, 4])
+    job_satisfaction = st.sidebar.select_slider("Job Satisfaction", options=[1, 2, 3, 4, 5])
+    work_life_balance = st.sidebar.select_slider("Work-Life Balance", options=[1, 2, 3, 4, 5])
     
     # Categorical Inputs based on your cat_cols list
     overtime = st.sidebar.selectbox("Does the employee work Overtime?", ["Yes", "No"])
@@ -65,7 +65,7 @@ with col1:
 with col2:
     st.subheader("Prediction Analysis")
     
-    # Business Logic from your Insights:
+    # Business Logic from given Insights:
     # Overtime, Income, and Satisfaction were your key drivers
     risk_score = 0
     if input_df['OverTime'][0] == "Yes":
